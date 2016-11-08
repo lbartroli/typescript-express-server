@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "copyAppFiles": "cp -r app js",
-    "start": "node js/app.js",
-    "start:dev": "nodemon --watch '**/*.ts' --exec 'ts-node' app.ts development"
+    "start": "nodemon --watch '**/*.ts' --exec 'ts-node' app.ts development"
   },
   "author": "Lucas Bartroli",
   "license": "ISC",
