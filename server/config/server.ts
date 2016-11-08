@@ -7,7 +7,7 @@ export const serverConfig = {
     },
     prod: {
         'URL': 'http://localhost/',
-        'PORT': 80,
-        'URL_FULL': 'http://localhost:80/'
+        'PORT': 8080,
+        'URL_FULL': 'http://localhost:8080/'
     }
 };
