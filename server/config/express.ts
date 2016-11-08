@@ -11,7 +11,7 @@ class ExpressConfig {
     config(express: any, app: express.Express, root: string, env: string) {
         app.engine('html', consolidate.swig);
         app.use(express.static(path.join(root, '/app/assets')));
-        // app.use(favicon(path.join(root + '/app/assets/images/favicon.ico')));
+        app.use(favicon(path.join(root + '/app/assets/images/favicon.ico')));
         app.use(cookieParser());
         app.use(bodyParser.urlencoded({ extended: false }));
         app.use(bodyParser.json());

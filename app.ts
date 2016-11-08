@@ -17,4 +17,9 @@ expressConfig.config(express, app, __dirname, env);
 routerConfig.config(app);
 
 // RUN SERVER
-app.listen(process.env.PORT || serverConfig.prod.PORT, () => {console.log(`Server running on: ${serverConfig.prod.URL_FULL}`)});
+if(env == 'production') {
+    app.listen(process.env.PORT, () => {console.log(`Server running on: ${process.env.PORT}`)});
+}
+else {
+    app.listen(serverConfig.dev.PORT, () => {console.log(`Server running on: ${serverConfig.dev.URL_FULL}`)});
+}
