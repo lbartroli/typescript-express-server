@@ -14,4 +14,4 @@ $ npm start
 
 >+ Configure your Server settings in ***/server/config/server.ts***
 
-## Enjoy.
+## [Enjoy](https://typescript-server.herokuapp.com/).
